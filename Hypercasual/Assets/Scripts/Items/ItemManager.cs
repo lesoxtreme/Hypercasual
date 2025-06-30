@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-//using Ebac.Core.Singleton;
+using Ebac.Core.Singleton;
 using TMPro;
 
 public class ItemManager : Singleton<ItemManager>
