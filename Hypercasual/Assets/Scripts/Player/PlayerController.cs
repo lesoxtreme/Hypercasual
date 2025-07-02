@@ -7,6 +7,7 @@ using TMPro;
 
 public class PlayerController : Singleton<PlayerController>
 {   
+    private TouchController TouchController;
     [Header("Text")]
     public TextMeshPro uiTextPowerup;
     [Header("Coin Setup")]
@@ -23,11 +24,18 @@ public class PlayerController : Singleton<PlayerController>
 
     public GameObject endScreen;
 
+    [Header("Animation")]
+    public AnimatorManager animatorManager;
+
     private bool _canRun;
     private Vector3 _pos;
     private float _currentSpeed;
     private Vector3 _startPosition;
 
+    private void Awake()
+    {
+        TouchController = GetComponent<TouchController>();
+    }
 
     void Update()
     {
@@ -42,7 +50,7 @@ public class PlayerController : Singleton<PlayerController>
 
 
  
-    public bool invencible = false;
+    private bool invencible = false;
 
 
     
@@ -51,7 +59,13 @@ public class PlayerController : Singleton<PlayerController>
     {
         if(collision.transform.tag == tagToCheckEnemy)
         {
-            if(!invencible) EndGame();
+            if(!invencible)
+            {
+            MoveBack();
+            EndGame(AnimatorManager.AnimationType.DEAD);
+            
+            TouchController.velocity= 0f;
+            }
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -61,17 +75,24 @@ public class PlayerController : Singleton<PlayerController>
             if(!invencible) EndGame();
         }
     }
+
+    private void MoveBack()
+    {
+        transform.DOMoveZ(-1f, .3f).SetRelative();
+    }
    
 
-    private void EndGame()
+    private void EndGame(AnimatorManager.AnimationType animationType = AnimatorManager.AnimationType.IDLE)
     {
         _canRun = false;
         endScreen.SetActive(true);
+        animatorManager.Play(animationType);
     }
 
     public void StartRun() 
     {
         _canRun = true;
+        animatorManager.Play(AnimatorManager.AnimationType.RUN);
     }
     #region POWER UPS 
     public void SetPowerUpText(string s)
