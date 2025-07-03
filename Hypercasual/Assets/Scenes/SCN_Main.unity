@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 13559664}
   - component: {fileID: 13559663}
   - component: {fileID: 13559662}
-  - component: {fileID: 13559665}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -220,22 +219,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13559660}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &13559665
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13559660}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &56002078
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,11 +351,6 @@ RectTransform:
   m_AnchoredPosition: {x: 4, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &106376069 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2658566220507794959, guid: efe36a63899f9d04ba1fffabec4c6400, type: 3}
-  m_PrefabInstance: {fileID: 2775011593105570630}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &122748172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -383,18 +361,6 @@ PrefabInstance:
     - target: {fileID: 1174714138848403614, guid: 2133730570c51984e924414c127888ae, type: 3}
       propertyPath: m_Name
       value: PFB_PowerUpBase
-      objectReference: {fileID: 0}
-    - target: {fileID: 6147931685190871196, guid: 2133730570c51984e924414c127888ae, type: 3}
-      propertyPath: duration
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6147931685190871196, guid: 2133730570c51984e924414c127888ae, type: 3}
-      propertyPath: graphicItem
-      value: 
-      objectReference: {fileID: 1265844802}
-    - target: {fileID: 7534092412815885284, guid: 2133730570c51984e924414c127888ae, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8876355400243494208, guid: 2133730570c51984e924414c127888ae, type: 3}
       propertyPath: m_RootOrder
@@ -452,6 +418,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3232876963726210524, guid: 447f0b3045f42064881ae381b7668645, type: 3}
   m_PrefabInstance: {fileID: 680042401}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &146115950 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8650719834741168914, guid: 89e20167823a30d459856414377997d1, type: 3}
+  m_PrefabInstance: {fileID: 990996612}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd36ed116725d14297aee096a5da0ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &239542881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,7 +1087,7 @@ MonoBehaviour:
   tagToCheckEnemy: Enemy
   tagToCheckEndLine: EndLine
   endScreen: {fileID: 463348609}
-  animatorManager: {fileID: 1806138263}
+  animatorManager: {fileID: 146115950}
 --- !u!1001 &626190449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1118,29 +1095,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 244450827}
     m_Modifications:
-    - target: {fileID: 578830098525331187, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
-      propertyPath: ease
-      value: 27
-      objectReference: {fileID: 0}
-    - target: {fileID: 578830098525331187, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
-      propertyPath: duration
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 578830098525331187, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
-      propertyPath: animationDuration
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1280877498868973901, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
       propertyPath: m_Name
       value: PFB_PowerUpCoin
-      objectReference: {fileID: 0}
-    - target: {fileID: 3487614836575130715, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b4000c22829221847805eaec5d040393, type: 2}
-    - target: {fileID: 7567597841549042231, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 8837431569954266259, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
       propertyPath: m_RootOrder
@@ -1186,43 +1143,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 578830098525331187, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
 --- !u!4 &626190450 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8837431569954266259, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
   m_PrefabInstance: {fileID: 626190449}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &626190451 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1093602713740933697, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
-  m_PrefabInstance: {fileID: 626190449}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &626190452 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1280877498868973901, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
-  m_PrefabInstance: {fileID: 626190449}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &626190453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626190452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04a3591660b78014bb57e725ad8b721c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  compareTag: Player
-  particleSystem: {fileID: 0}
-  timeToHide: 3
-  graphicItem: {fileID: 626190451}
-  audioSource: {fileID: 0}
-  duration: 3
-  sizeAmount: 7
 --- !u!1001 &680042401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1652,11 +1579,6 @@ CanvasRenderer:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3232876963726210524, guid: 447f0b3045f42064881ae381b7668645, type: 3}
   m_PrefabInstance: {fileID: 1187084590}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &830024376 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1309266475360863169, guid: b07286c5917bec044939756d7185f665, type: 3}
-  m_PrefabInstance: {fileID: 8433807398757879653}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &831226162
 PrefabInstance:
@@ -2101,6 +2023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PFB_Astronaut Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8650719834741168914, guid: 89e20167823a30d459856414377997d1, type: 3}
+      propertyPath: animatorSetups.Array.data[2].speed
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89e20167823a30d459856414377997d1, type: 3}
 --- !u!4 &990996613 stripped
@@ -2273,16 +2199,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 447f0b3045f42064881ae381b7668645, type: 3}
---- !u!1 &1209224199 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1093602713740933697, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
-  m_PrefabInstance: {fileID: 440231914201907024}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1265844802 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1055736608998693778, guid: 2133730570c51984e924414c127888ae, type: 3}
-  m_PrefabInstance: {fileID: 122748172}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1472883503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2618,17 +2534,6 @@ Transform:
   m_Father: {fileID: 1875200607}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1806138263 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8650719834741168914, guid: 89e20167823a30d459856414377997d1, type: 3}
-  m_PrefabInstance: {fileID: 990996612}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bd36ed116725d14297aee096a5da0ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1855602908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2927,22 +2832,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 244450827}
     m_Modifications:
-    - target: {fileID: 578830098525331187, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
-      propertyPath: ease
-      value: 27
-      objectReference: {fileID: 0}
-    - target: {fileID: 578830098525331187, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
-      propertyPath: duration
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 578830098525331187, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
-      propertyPath: graphicItem
-      value: 
-      objectReference: {fileID: 1209224199}
-    - target: {fileID: 578830098525331187, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
-      propertyPath: animationDuration
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1280877498868973901, guid: 5a6b9c2cebda1b7418766211e78149d4, type: 3}
       propertyPath: m_Name
       value: PFB_PowerUpHeight
@@ -3005,14 +2894,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 244450827}
     m_Modifications:
-    - target: {fileID: 2057048954902908486, guid: efe36a63899f9d04ba1fffabec4c6400, type: 3}
-      propertyPath: duration
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2057048954902908486, guid: efe36a63899f9d04ba1fffabec4c6400, type: 3}
-      propertyPath: graphicItem
-      value: 
-      objectReference: {fileID: 106376069}
     - target: {fileID: 4183502618627568899, guid: efe36a63899f9d04ba1fffabec4c6400, type: 3}
       propertyPath: m_Name
       value: PFB_PowerUpInvencible
@@ -3269,14 +3150,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PFB_PowerUpSpeedUp
       objectReference: {fileID: 0}
-    - target: {fileID: 5358095239517102600, guid: b07286c5917bec044939756d7185f665, type: 3}
-      propertyPath: graphicItem
-      value: 
-      objectReference: {fileID: 830024376}
-    - target: {fileID: 5358095239517102600, guid: b07286c5917bec044939756d7185f665, type: 3}
-      propertyPath: amountToSpeed
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 7467792829795427603, guid: b07286c5917bec044939756d7185f665, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3321,8 +3194,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1309266475360863168, guid: b07286c5917bec044939756d7185f665, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b07286c5917bec044939756d7185f665, type: 3}
 --- !u!4 &8641934191077987227 stripped
 Transform:

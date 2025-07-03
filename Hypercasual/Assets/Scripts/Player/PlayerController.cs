@@ -31,6 +31,7 @@ public class PlayerController : Singleton<PlayerController>
     private Vector3 _pos;
     private float _currentSpeed;
     private Vector3 _startPosition;
+    private float _basespeedToAnimation = 7;
 
     private void Awake()
     {
@@ -92,7 +93,7 @@ public class PlayerController : Singleton<PlayerController>
     public void StartRun() 
     {
         _canRun = true;
-        animatorManager.Play(AnimatorManager.AnimationType.RUN);
+        animatorManager.Play(AnimatorManager.AnimationType.RUN, _currentSpeed / _basespeedToAnimation);
     }
     #region POWER UPS 
     public void SetPowerUpText(string s)
