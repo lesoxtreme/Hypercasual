@@ -29,4 +29,8 @@ public class TouchController : MonoBehaviour
     {
         transform.position += Vector3.right * Time.deltaTime * speed * velocity;
     }
+    private void OnTriggerEnter(Collider other)
+    {
+    velocity = 0f;
+    }
 }

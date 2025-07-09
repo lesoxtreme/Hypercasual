@@ -5,9 +5,10 @@ using Ebac.Core.Singleton;
 using DG.Tweening;
 using TMPro;
 
+
+
 public class PlayerController : Singleton<PlayerController>
 {   
-    private TouchController TouchController;
     [Header("Text")]
     public TextMeshPro uiTextPowerup;
     [Header("Coin Setup")]
@@ -23,7 +24,6 @@ public class PlayerController : Singleton<PlayerController>
     public string tagToCheckEndLine = "EndLine";
 
     public GameObject endScreen;
-
     [Header("Animation")]
     public AnimatorManager animatorManager;
 
@@ -31,12 +31,8 @@ public class PlayerController : Singleton<PlayerController>
     private Vector3 _pos;
     private float _currentSpeed;
     private Vector3 _startPosition;
-    private float _basespeedToAnimation = 7;
+     private float _basespeedToAnimation = 7;
 
-    private void Awake()
-    {
-        TouchController = GetComponent<TouchController>();
-    }
 
     void Update()
     {
@@ -51,7 +47,7 @@ public class PlayerController : Singleton<PlayerController>
 
 
  
-    private bool invencible = false;
+    public bool invencible = false;
 
 
     
@@ -65,7 +61,7 @@ public class PlayerController : Singleton<PlayerController>
             MoveBack();
             EndGame(AnimatorManager.AnimationType.DEAD);
             
-            TouchController.velocity= 0f;
+            
             }
         }
     }
@@ -95,7 +91,7 @@ public class PlayerController : Singleton<PlayerController>
         _canRun = true;
         animatorManager.Play(AnimatorManager.AnimationType.RUN, _currentSpeed / _basespeedToAnimation);
     }
-    #region POWER UPS 
+    # region POWER UPS 
     public void SetPowerUpText(string s)
     {
         uiTextPowerup.text = s;
