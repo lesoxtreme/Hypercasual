@@ -27,6 +27,8 @@ public class PlayerController : Singleton<PlayerController>
     [Header("Animation")]
     public AnimatorManager animatorManager;
 
+    [SerializeField] private BounceHelper _bounceHelper;
+
     private bool _canRun;
     private Vector3 _pos;
     private float _currentSpeed;
@@ -49,7 +51,11 @@ public class PlayerController : Singleton<PlayerController>
  
     public bool invencible = false;
 
-
+    public void Bounce()
+    {
+        if( _bounceHelper != null)
+        _bounceHelper.Bounce();
+    }
     
   
     private void OnCollisionEnter(Collision collision)

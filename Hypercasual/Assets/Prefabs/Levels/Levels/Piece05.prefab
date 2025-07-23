@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 23646929223587651}
   - component: {fileID: 3739255683711061636}
   - component: {fileID: 4546126202217120159}
+  - component: {fileID: 8633081161981634799}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -96,6 +97,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &8633081161981634799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859534784004169711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 055c6e254459ba741afddad51a36edeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1
+  meshRenderer: {fileID: 3739255683711061636}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &4532031691663647701
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,7 +212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3845339363769401518, guid: a80c4cf529744084aaccdd1109cfb91e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.74
+      value: 5.87
       objectReference: {fileID: 0}
     - target: {fileID: 3845339363769401518, guid: a80c4cf529744084aaccdd1109cfb91e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -258,7 +274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3845339363769401518, guid: a80c4cf529744084aaccdd1109cfb91e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.74
+      value: 6.03
       objectReference: {fileID: 0}
     - target: {fileID: 3845339363769401518, guid: a80c4cf529744084aaccdd1109cfb91e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -460,7 +476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3845339363769401518, guid: a80c4cf529744084aaccdd1109cfb91e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.63
+      value: -4.6
       objectReference: {fileID: 0}
     - target: {fileID: 3845339363769401518, guid: a80c4cf529744084aaccdd1109cfb91e, type: 3}
       propertyPath: m_LocalPosition.y
