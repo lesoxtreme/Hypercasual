@@ -22,6 +22,7 @@ public class ItemCollectableBase : MonoBehaviour
         if(collision.transform.CompareTag(compareTag))
         {
             Collect();
+            PlayerController.Instance.Bounce();
         }
     }
 
