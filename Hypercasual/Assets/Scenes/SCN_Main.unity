@@ -1035,6 +1035,7 @@ Transform:
   - {fileID: 56002079}
   - {fileID: 160151239}
   - {fileID: 678150809}
+  - {fileID: 650138201}
   m_Father: {fileID: 1875200607}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1075,8 +1076,20 @@ MonoBehaviour:
   tagToCheckEndLine: EndLine
   endScreen: {fileID: 463348609}
   animatorManager: {fileID: 160151240}
+  vfxDeath: {fileID: 650138199}
+  limits: 6.5
   _bounceHelper: {fileID: 600428830}
   invencible: 0
+--- !u!198 &650138199 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5883623617865568956, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+  m_PrefabInstance: {fileID: 3823046687328690391}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &650138201 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 772759401876372616, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+  m_PrefabInstance: {fileID: 3823046687328690391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &678150808
 GameObject:
   m_ObjectHideFlags: 0
@@ -2865,6 +2878,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb345fa925766e04180e4d41022cf584, type: 3}
+--- !u!1001 &3823046687328690391
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 600428835}
+    m_Modifications:
+    - target: {fileID: 772759401876372616, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 772759401876372616, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 772759401876372616, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 772759401876372616, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 772759401876372616, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 772759401876372616, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 772759401876372616, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 772759401876372616, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 772759401876372616, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 772759401876372616, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 772759401876372616, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004640907197619453, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+      propertyPath: m_Name
+      value: PBF_VFX_Death
+      objectReference: {fileID: 0}
+    - target: {fileID: 5883623617865568956, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+      propertyPath: ShapeModule.type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5883623617865568956, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5883623617865568956, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 56ac9f9aab8d67440ae81ccfaba37af7, type: 3}
 --- !u!4 &4774422551261442080 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7763188996381188889, guid: bb345fa925766e04180e4d41022cf584, type: 3}

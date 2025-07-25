@@ -198,6 +198,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7217446095326293144, guid: cd6f7f2eb84f97f41b7b0acbc765bbe7, type: 3}
+      propertyPath: scalingMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7217446095326293144, guid: cd6f7f2eb84f97f41b7b0acbc765bbe7, type: 3}
       propertyPath: ShapeModule.type
       value: 0
       objectReference: {fileID: 0}
