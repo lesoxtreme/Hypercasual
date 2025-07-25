@@ -153,10 +153,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04a3591660b78014bb57e725ad8b721c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  compareTag: Player
+  compareTag: CoinCollector
   particleSystem: {fileID: 0}
   timeToHide: 3
   graphicItem: {fileID: 838161107210224389}
   audioSource: {fileID: 0}
   duration: 0.5
-  sizeAmount: 7
+  sizeAmount: 4

@@ -26,13 +26,16 @@ public class ItemCollectableBase : MonoBehaviour
         }
     }
 
-    
-
-    protected virtual void Collect()
+    protected virtual void HideItens()
     {
         if(graphicItem !=null) graphicItem.SetActive(false);
         Invoke("HideObject", timeToHide);
         Debug.Log("teste");
+    }
+
+    protected virtual void Collect()
+    {
+        HideItens();
         OnCollect();
     }
 
@@ -43,7 +46,12 @@ public class ItemCollectableBase : MonoBehaviour
 
     protected virtual void OnCollect()
     {
-        if(particleSystem != null) particleSystem.Play();
+        if(particleSystem != null) 
+        {
+            //particleSystem.transform.SetParent(null);
+            particleSystem.Play();
+        }
+
         if(audioSource != null) audioSource.Play();
     }
 }
